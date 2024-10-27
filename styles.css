@@ -576,6 +576,8 @@ button {
 .socials-item {
 }
 .authors-socials-svg {
+  width: 20px;
+  height: 20px;
 }
 
 /**Logo component**/
@@ -884,4 +886,6 @@ button {
 }
 .footer-socials-svg {
   fill: #6d6e76;
+  width: 20px;
+  height: 20px;
 }
