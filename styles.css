@@ -882,10 +882,14 @@ button {
 }
 .footer-socials-item {
 }
-.footer-socials-link {
-}
+
 .footer-socials-svg {
   fill: #6d6e76;
   width: 20px;
   height: 20px;
+  transition: fill 300ms ease-in-out;
+}
+.footer-socials-link:hover .footer-socials-svg,
+.footer-socials-link:focus .footer-socials-svg {
+  fill: #fff;
 }
