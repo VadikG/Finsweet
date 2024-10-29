@@ -1338,6 +1338,48 @@ button {
 }
 .working-hours {
 }
+.working-contact-title {
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.42; /* 142.857% */
+  margin-bottom: 32px;
+}
+.working-contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 294px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.working-contact-day {
+  color: #fff;
+  font-family: Sen;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6; /* 160% */
+}
+.working-contact-hours {
+  color: #fff;
+  font-family: Sen;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6; /* 160% */
+}
+.working-contact-text {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.75; /* 175% */
+}
+
+.contact {
+  display: flex;
+  gap: 71px;
+  width: 768px;
+  margin-bottom: 32px;
+}
 .contact-title {
   position: relative;
   color: rgba(255, 255, 255, 0.6);
@@ -1354,22 +1396,59 @@ button {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+.contact-link.accent {
+  color: #fff;
+  font-family: Sen;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6; /* 160% */
+}
 
-.contact-day {
-  color: #fff;
-  font-family: Sen;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.6; /* 160% */
-}
-.contact-hours {
-  color: #fff;
-  font-family: Sen;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.6; /* 160% */
-}
-.contact-text {
+.contact-link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
+  line-height: 1.75; /* 175% */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-form-input,
+.contact-form-select {
+  width: 768px;
+  padding: 24px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  outline: none;
+}
+.contact-form-select {
+}
+.contact-form-textarea {
+  width: 768px;
+  height: 144px;
+  padding: 24px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  resize: none;
+  outline: none;
+}
+.contact-btn {
+  width: 768px;
+  height: 64px;
+  background-color: #ffd050;
+  transition: background-color 300ms ease-in-out;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #edc14a;
+}
+
+.contact-form-input::placeholder,
+.contact-form-select::placeholder,
+.contact-form-textarea::placeholder {
+  color: var(--Black, #232536);
   line-height: 1.75; /* 175% */
 }
