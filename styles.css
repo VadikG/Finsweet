@@ -1304,10 +1304,13 @@ button {
 .contact-content {
   padding: 128px 336px;
 }
+
+.contact-content .container {
+  width: 768px;
+}
 .contact-heading {
   width: 768px;
   padding-bottom: 64px;
-  margin: 0 auto;
 }
 .contact-heading-subtitle {
   text-align: center;
@@ -1335,6 +1338,10 @@ button {
 .contact {
   background-color: #592ea9;
   padding: 48px 64px;
+  display: flex;
+  gap: 71px;
+  width: 768px;
+  margin-bottom: 32px;
 }
 .working-hours {
 }
@@ -1374,12 +1381,6 @@ button {
   line-height: 1.75; /* 175% */
 }
 
-.contact {
-  display: flex;
-  gap: 71px;
-  width: 768px;
-  margin-bottom: 32px;
-}
 .contact-title {
   position: relative;
   color: rgba(255, 255, 255, 0.6);

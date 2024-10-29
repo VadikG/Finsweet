@@ -42,43 +42,46 @@
         </div>
     </header>
     <section class="contact-content">
-        <div class="contact-heading">
-            <p class="contact-heading-subtitle">Contact us</p>
-            <h1 class="contact-heading-title">Let’s Start a Conversation</h1>
-            <p class="contact-heading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-        </div>
-
-        <div class="contact">
-            <div class="working-hours">
-                <p class="working-contact-title">Working hours</p>
-                <p class="working-contact-day">Monday To Friday</p>
-                <p class="working-contact-hours">9:00 AM to 8:00 PM</p>
-                <p class="working-contact-text">Our Support Team is available 24/7</p>
+        <div class="container">
+            <div class="contact-heading">
+                <p class="contact-heading-subtitle">Contact us</p>
+                <h1 class="contact-heading-title">Let’s Start a Conversation</h1>
+                <p class="contact-heading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
-            <div class="working-contact">
-                <p class="contact-title">Contact Us</p>
-                <a class="contact-link accent" href="tel:02079932905">020 7993 2905</a>
-                <a class="contact-link" href="mailto:info@devstudio.com">hello@finsweet.com</a>
+
+            <div class="contact">
+                <div class="working-hours">
+                    <p class="working-contact-title">Working hours</p>
+                    <p class="working-contact-day">Monday To Friday</p>
+                    <p class="working-contact-hours">9:00 AM to 8:00 PM</p>
+                    <p class="working-contact-text">Our Support Team is available 24/7</p>
+                </div>
+                <div class="working-contact">
+                    <p class="contact-title">Contact Us</p>
+                    <a class="contact-link accent" href="tel:02079932905">020 7993 2905</a>
+                    <a class="contact-link" href="mailto:info@devstudio.com">hello@finsweet.com</a>
+                </div>
             </div>
+
+            <form class="contact-form">
+
+                <input class="contact-form-input" type="text" id="full-name" name="full-name" placeholder="Full Name"
+                    required>
+                <input class="contact-form-input" type="email" id="email" name="email" placeholder="Your Email"
+                    required>
+                <select class="contact-form-select" id="query-related" name="query-related">
+                    <option value="" disabled selected>Query Related</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <textarea class="contact-form-textarea" id="message" name="message" placeholder="Message" rows="5"
+                    required></textarea>
+                <button class="contact-btn" type="submit">Send Message</button>
+            </form>
         </div>
-
-        <form class="contact-form">
-
-            <input class="contact-form-input" type="text" id="full-name" name="full-name" placeholder="Full Name"
-                required>
-            <input class="contact-form-input" type="email" id="email" name="email" placeholder="Your Email" required>
-            <select class="contact-form-select" id="query-related" name="query-related">
-                <option value="" disabled selected>Query Related</option>
-                <option value="general">General Inquiry</option>
-                <option value="support">Support</option>
-                <option value="feedback">Feedback</option>
-            </select>
-            <textarea class="contact-form-textarea" id="message" name="message" placeholder="Message" rows="5"
-                required></textarea>
-            <button class="contact-btn" type="submit">Send Message</button>
-        </form>
     </section>
     <!--Footer-->
     <footer class="footer">
