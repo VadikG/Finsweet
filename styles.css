@@ -1297,3 +1297,79 @@ button {
 .why-started-text {
   line-height: 1.75; /* 175% */
 }
+
+/*****************************************************************/
+/**Contact**/
+/*****************************************************************/
+.contact-content {
+  padding: 128px 336px;
+}
+.contact-heading {
+  width: 768px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+}
+.contact-heading-subtitle {
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.25; /* 125% */
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.contact-heading-title {
+  text-align: center;
+  font-family: Sen;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+.contact-heading-text {
+  color: #6d6e76;
+  text-align: center;
+  line-height: 1.75; /* 175% */
+}
+
+.contact {
+  background-color: #592ea9;
+  padding: 48px 64px;
+}
+.working-hours {
+}
+.contact-title {
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.42; /* 142.857% */
+  margin-bottom: 32px;
+}
+.contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 294px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-day {
+  color: #fff;
+  font-family: Sen;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6; /* 160% */
+}
+.contact-hours {
+  color: #fff;
+  font-family: Sen;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6; /* 160% */
+}
+.contact-text {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.75; /* 175% */
+}
