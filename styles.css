@@ -1440,6 +1440,10 @@ button {
   height: 64px;
   background-color: #ffd050;
   transition: background-color 300ms ease-in-out;
+  font-family: Sen;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33; /* 133.333% */
 }
 
 .contact-btn:hover,
