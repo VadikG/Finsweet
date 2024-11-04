@@ -263,16 +263,24 @@ button {
   padding: 128px 556px 192px 80px;
   **/
 }
-@media only screen and (min-width: 992px) {
-   .hero{
-    padding: 128px 556px 192px 80px;
-  }
-}
+
 @media only screen and (min-width: 768px) {
    .hero{
     padding: 60px 100px 150px 80px;
   }
 }
+  @media only screen and (min-width: 992px) {
+   .hero{
+    padding: 128px 556px 192px 80px;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+   .hero{
+    padding: 128px 556px 192px 80px;
+  }
+}
+
 .bg-hero {
   background-image: radial-gradient(
       80.99% 71.93% at 74.58% 0%,
@@ -284,6 +292,7 @@ button {
   background-size: cover;
   background-position: center;
   width: 100%;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -365,16 +374,40 @@ button {
 }
 
 /**section Posts**/
-.posts {
+.posts{
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .posts {
+    display: block;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .posts {
+    display: block;
   padding-top: 130px;
   padding-bottom: 130px;
 }
+}
+
 .posts-title {
   visibility: hidden;
 }
 .posts .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 32px;
+}
+@media only screen and (min-width: 1200px) {
+  .posts .container {
+    flex-direction: row;
+    
+  }
 }
 .featured-post {
 }
@@ -387,13 +420,28 @@ button {
   margin-bottom: 32px;
 }
 .featured-post-wrapper {
-  width: 733px;
+  width: 100%;
   height: auto;
   padding: 32px;
   border: 1px solid rgba(109, 110, 118, 0.1);
 }
+
+@media only screen and (min-width: 1200px) {
+   .featured-post-wrapper{
+   width: 600px; 
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+   .featured-post-wrapper{
+   width: 733px; 
+  }
+}
+
+ 
 .featured-post-img {
   margin-bottom: 32px;
+  width: 100%;
 }
 .featured-author-info {
   color: #4c4c4c;
@@ -491,7 +539,7 @@ button {
   justify-content: end;
 }
 .form-about.yellow-form {
-  width: 779px;
+  width: calc( 100% - 50% );
   height: 23px;
   background-color: #ffd050;
 }
@@ -504,16 +552,40 @@ button {
 
 .about-content {
   display: flex;
-  gap: 83px;
+  flex-direction: column;
+  gap: 30px;
   background-color: #f4f0f8;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .about-content {
+  gap: 83px;
   padding: 96px 108px 96px 80px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+   .about-content{
+    flex-direction: row;
+  }
 }
 .about-title {
   visibility: hidden;
 }
-.about-us {
-  width: 515px;
-  padding-right: 21px;
+.about-us-content {
+  width: 100%;
+  
+}
+@media only screen and (min-width: 992px) {
+  .about-us-content {
+    width: 80%;
+    
+  }
+}
+@media only screen and (min-width: 1200px) {
+   .about-us-content{
+    width: 515px;
+    padding-right: 21px;
+  }
 }
 .about-us-sibtitle {
   font-weight: 600;
@@ -543,20 +615,38 @@ button {
   line-height: 1.77; /* 177.778% */
 }
 
-.our-mision {
-  width: 516px;
-  padding-right: 35px;
+.our-mision-content {
+  width: 100%;
+  
+}
+@media only screen and (min-width: 992px) {
+  .our-mision-content {
+    width: 80%;
+    
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .our-mision-content {
+    width: 516px;
+    padding-right: 35px;
+  }
 }
 .our-mision-sibtitle {
   font-weight: 600;
   line-height: 1.25; /* 125% */
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+   .our-mision-sibtitle {
+    margin-bottom: 24px;
+  }
 }
 .our-mision-resume {
   font-family: Sen;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.42;
   letter-spacing: -0.03em;
